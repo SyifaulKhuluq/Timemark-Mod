@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Timemark iOS Companion",
+    "slug": "timemark-ios-companion",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.timemarkcompanion",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Kamera digunakan untuk mengambil foto pekerjaan.",
+        "NSLocationWhenInUseUsageDescription": "Lokasi digunakan untuk menampilkan koordinat dan alamat pada foto pekerjaan."
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Izinkan Timemark Companion menggunakan kamera untuk foto pekerjaan."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Izinkan Timemark Companion menggunakan lokasi untuk informasi foto pekerjaan."
+        }
+      ]
+    ]
+  }
+}
